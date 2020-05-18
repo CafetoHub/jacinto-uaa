@@ -1,0 +1,11 @@
+version: '2'
+services:
+  jacintouaa-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/jacintoUAA/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=jacintoUAA
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
